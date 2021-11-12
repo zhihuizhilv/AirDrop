@@ -37,6 +37,7 @@ const config: HardhatUserConfig = {
     },
     bsc: {
       url: process.env.ROPSTEN_URL || "https://bsc-dataseed4.binance.org/",
+      gas: 8000000,
       accounts:
           process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
